@@ -4,3 +4,12 @@
 	margin: 10px;
 	padding: 10px;
 }
+
+.header-projetos{
+	border-style: solid;
+	border-width: 2px;
+	margin: 10px;
+	padding: 10px;
+	display: inline;
+
+}
