@@ -28,9 +28,29 @@
 
 }
 .lista {
-	display: absolute;
 	margin-left: 900px;
 	margin-top: -200px;
+}
+
+.titulo_projetos {
+
+	display: absolute;
+	margin-left: 750px;
+	margin-top: -750px;
+}
+
+.display_projeto_1_3{
+	display: absolute;
+	margin-left: 150px;
+	margin-top: 150px;
+
+}
+
+.display_projeto_2_4{
+	display: absolute;
+	margin-left: 250px;
+	margin-top: 50px;
+
 }
 
 .foto {
