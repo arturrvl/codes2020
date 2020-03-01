@@ -52,3 +52,14 @@
 	display: block;
 	background-color: white;
 }
+.imgitem {
+	height: 200px;
+	width: 280px;
+}
+.item {
+	margin-bottom: 50px;
+}
+.categ {
+	margin-bottom: 20px;
+
+}
