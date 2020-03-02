@@ -83,3 +83,31 @@
 	margin-bottom: 20px;
 
 }
+
+
+.img-pj{
+	position: absolute;
+	 left: 520px;
+	 top: 280px;
+
+
+}
+
+.descricao-pj{
+	position: absolute;
+	left: 520px;
+	top: 580px;
+}
+
+.equipe-pj{
+	position: absolute;
+	left: 520px;
+	top: 680px;
+}
+
+.recursos-pj{
+	position: absolute;
+	left: 520px;
+	top: 780px;
+}
+}
