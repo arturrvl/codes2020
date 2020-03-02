@@ -87,27 +87,27 @@
 
 .img-pj{
 	position: absolute;
-	 left: 520px;
-	 top: 280px;
+	 left: 820px;
+	 top: 150px;
 
 
 }
 
 .descricao-pj{
 	position: absolute;
-	left: 520px;
-	top: 580px;
+	left: 820px;
+	top: 450px;
 }
 
 .equipe-pj{
 	position: absolute;
-	left: 520px;
-	top: 680px;
+	left: 820px;
+	top: 550px;
 }
 
 .recursos-pj{
 	position: absolute;
-	left: 520px;
-	top: 780px;
+	left: 820px;
+	top: 650px;
 }
 }
