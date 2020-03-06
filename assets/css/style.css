@@ -284,11 +284,20 @@
 
 .fonte_titulo{
 	font-family:'Spartan', sans-serif;
-	font-size: ;
-	font-style: ;
-	font-weight:;
+	font-size: 10rem;
+	font-weight:bold;
+
+	line-height: 1;
+	letter-spacing: 0.5rem;
 }
 
 .fonte_corpo{
+	font-family: 'Noto Serif', serif;
+	font-size: 15rem;
+	font-style: italic;
+	font-weight: bold;
+
+	line-height: 1.5;
+	letter-spacing: 0.5rem;
 
 }
