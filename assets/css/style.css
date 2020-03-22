@@ -61,10 +61,22 @@
 	margin-right: 0.2rem;
 }
 
+.setamob {
+	height: 1rem;
+	width: 1rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	display: none;
+}
+
 .nomemike {
 	text-align: center;
 	margin-top: 1rem;
 	font-size: 1.6rem;
+}
+
+.nomemike2 {
+	display: none;
 }
 
 .descricaomike {
@@ -303,4 +315,164 @@
 
 .textodescritivo {
 	font-family: 'Noto Serif', serif;
+}
+
+
+@media (max-width: 68rem) {
+
+	.imgbarra {
+		display: none;
+	}
+
+	.mainindex {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.listatitle {
+		font-size: 4rem;
+	}
+
+	.listaindex {
+		max-width: 58rem;
+	}
+
+	.categtitle {
+		font-size: 3rem;
+	}
+
+	.categtext {
+		font-size: 2rem;
+	}
+
+	.barralateralindex {
+		flex-direction: row;
+		max-width: 58rem;
+		justify-content: space-between;
+		width: 58rem;
+		margin-bottom: 3rem;
+	}
+
+	.fotomike {
+		width: 26rem;
+		height: 21rem;
+	}
+
+	.textlateral {
+		width: 28rem;
+		height: 24rem;
+		max-height: 24rem;
+		max-width: 28rem;
+	}
+
+	.nomemike {
+		display: none;
+	}
+
+	.descricaomike {
+		font-size: 2.6rem;
+		text-align: justify;
+	}
+
+	.nomemike2 {
+		display: flex;
+		text-align: center;
+		font-size: 2.2rem;
+		align-self: center;
+	}
+
+	.mobileindex {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		border-width: 0.05rem;
+		border-style: solid;
+		border-color: white;
+		border-radius: 0.5rem;
+		margin-bottom: 0.05rem;
+	}
+
+	.itemcateg {
+		display: none;
+	}
+
+	.barralateralcateg {
+		width: 60rem;
+		background-color: #375180;
+		border-color: #375180;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 7rem;
+	}
+
+	.indicecateg {
+		font-size: 3.5rem;
+		color: white;
+	}
+
+	.linkinicio {
+		color: white;
+	}
+
+	.seta {
+		display: none;
+	}
+
+	.setamob {
+		display: initial;
+		width: 4rem;
+		height: 2.6rem;
+	}
+
+	.listatitle {
+		display: none;
+	}
+
+	.listacateg {
+		max-width: 60rem;
+		width: 60rem;
+	}
+
+	.categprotitle {
+		font-size: 2.5rem;
+		max-width: 20rem;
+	}
+
+	.imgcategpro {
+		height: 18rem;
+		width: 20rem;
+		margin: 0rem;
+	}
+
+	.linhalista {
+		width: 58rem;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: baseline;
+	}
+
+	.projtitle {
+		display: none;
+	}
+
+	.indicecategpro {
+		color: white;
+		font-size: 2.4rem;
+	}
+
+	.imgproj {
+		width: 48rem;
+		max-width: 50rem;
+		height: 34rem;
+		margin-top: 3rem;
+	}
+
+	.projdesc {
+		font-size: 4rem;
+		width: 48rem;
+	}
+
+	.textodescritivo {
+		font-size: 2rem;
+	}
 }
