@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Matemática</title>
+  <title>{{titulo}}</title>
   <link href='assets/css/reset.css' rel='stylesheet'>
   <link href='assets/css/style.css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
   <meta charset="utf-8"/>
   <meta name=”viewport” content=”width-device-width,initial-scale-1”>
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/projeto.js"></script>
 </head>
-<body class="body">
-  <header  class='headerindex'>
-    <img class="imglogo" src='assets/img/logo.png' alt='Logo'>
-    <img class="imgbarra" src='assets/img/barrapesquisa.jpg' alt= 'Uma barra de pesquisa'>
-  </header>
-  <main class="mainindex">
-    <ul class="barralateralcateg">
-      <li class='indicecategpro'>
-        <a href="index.html" class="linkinicio">Início</a><img class="seta" src='assets/img/seta.png' alt= 'Uma seta'><img class="setamob" src='assets/img/setamob.png' alt= 'Uma seta'><a href="categoria.html" class="linkinicio">Matemática</a><img class="seta" src='assets/img/seta.png' alt= 'Uma seta'><img class="setamob" src='assets/img/setamob.png' alt= 'Uma seta'><a>Aprese. de um Tópico</a>
-      </li>
-      <li class='itemcateg'>
-        <a href="categoria.html" class="button">Projetos de Matemática</a>
-      </li>
-      <li class='itemcateg'>
-        <a href="categoria.html" class="button">Projetos digitais</a>
-      </li>
-      <li class='itemcateg'>
-        <a href="categoria.html" class="button">Projetos físicos</a>
-      </li>
-    </ul>
-    <div>
-      <ul class="listacateg">
-        <li class='categorias'>
-          <a class="projtitle">Apresentação de um tópico:</a>
+<body>
+  <div class="body">
+    <header  class='headerindex'>
+      <a href="index.html"><img class="imglogo" src='assets/img/logo.png' alt='Logo'></a>
+      <img class="imgbarra" src='assets/img/barrapesquisa.jpg' alt= 'Uma barra de pesquisa'>
+    </header>
+    <main class="mainindex">
+      <ul class="barralateralcateg">
+        <li class='indicecategpro'>
+          <a href="index.html" class="linkinicio">Início</a><img class="seta" src='assets/img/seta.png' alt= 'Uma seta'><img class="setamob" src='assets/img/setamob.png' alt= 'Uma seta'><a href="categoria.html?key=g" class="linkinicio2">{{categoria}}</a><img class="seta" src='assets/img/seta.png' alt= 'Uma seta'><img class="setamob" src='assets/img/setamob.png' alt= 'Uma seta'><a class="proultitle">{{titulo}}</a>
         </li>
-        <li>
-          <img class="imgproj" src='assets/img/mattopico.jpg' alt= 'img do projeto'>
+        {{#each portfolio}}
+        <li class='itemcateg'>
+          <a href="categoria.html?key={{@key}}" class="button">{{categoria}}</a>
         </li>
-        <li class="projdesc">
-          <p>Descrição:</p>
-          <p class="textodescritivo">Estudar e apresentar um tópico que não foi dado em aula.</p>
-        </li>
-        <li class="projdesc">
-          <p>Equipe:</p>
-          <p class="textodescritivo">Artur e seus amigos.</p>
-        </li>
-        <li class="projdesc">
-          <p>Recursos:</p>
-          <p class="textodescritivo">Python, Word, PowerPoint.</p>
-        </li>
+        {{/each}}
       </ul>
-    </div>
-  </main>
+      <div>
+        <ul class="listacateg">
+          <li class='categorias'>
+            <a class="projtitle">{{titulo}}</a>
+          </li>
+          <li>
+            <img class="imgproj" src='assets/img/{{@key}}.jpg' alt= '{{@this.key}}'>
+          </li>
+          <li class="projdesc">
+            <p>Descrição:</p>
+            <p class="textodescritivo">{{descricao}}.</p>
+          </li>
+          <li class="projdesc">
+            <p>Equipe:</p>
+            <p class="textodescritivo">{{equipe}}.</p>
+          </li>
+          <li class="projdesc">
+            <p>Recursos:</p>
+            <p class="textodescritivo">{{recursos}}.</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

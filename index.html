@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Portfólio do Michael Jackons</title>
+	<title>Portfólio do Michael Jackson</title>
 	<link href='assets/css/reset.css' rel='stylesheet'>
 	<link href='assets/css/style.css' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 	<meta charset="utf-8"/>
 	<meta name=”viewport” content=”width-device-width,initial-scale-1”>
+	<script src="assets/js/codes.js"></script>
+	<script src="assets/js/index.js"></script>
 </head>
-<body class="body">
-	<header  class='headerindex'>
-		<img class="imglogo" src='assets/img/logo.png' alt='Logo'>
-		<img class="imgbarra" src='assets/img/barrapesquisa.jpg' alt= 'Uma barra de pesquisa'>
-	</header>
-	<main class="mainindex">
-		<div class="barralateralindex">
-			<div class="mobileindex">
-				<img class="fotomike" src="assets/img/michael.jpg" alt="imagem do michael">
-				<h1 class="nomemike2">Michael Jackson</h1>
+<body>
+	<div class="body">
+		<header  class='headerindex'>
+			<a href="index.html"><img class="imglogo" src='assets/img/logo.png' alt='Logo'></a>
+			<img class="imgbarra" src='assets/img/barrapesquisa.jpg' alt= 'Uma barra de pesquisa'>
+		</header>
+		<main class="mainindex">
+			<div class="barralateralindex">
+				<div class="mobileindex">
+					<img class="fotomike" src="assets/img/michael.jpg" alt="imagem do michael">
+					<h1 class="nomemike2">Michael Jackson</h1>
+				</div>
+				<div class="textlateral">
+					<h1 class="nomemike">Michael Jackson</h1>
+					<p class="descricaomike">
+						Primeiramente olá, então como você pode ver aqui você encontra os projetos feitos por mim, Michael Jackson:
+					</p>
+				</div>
 			</div>
-			<div class="textlateral">
-				<h1 class="nomemike">Michael Jackson</h1>
-				<p class="descricaomike">
-					Primeiramente olá, então como você pode ver aqui você encontra os projetos feitos por mim, Michael Jackson:
-				</p>
+			<div>
+				<ul class="listaindex">
+					<li class='categorias'>
+						<a class="listatitle">Categorias:</a>
+					</li>
+					{{#each portfolio}}
+					<li class='itemindex'>
+						<a href="categoria.html?key={{@key}}">
+							<img class="imgcateg" src="assets/img/{{@key}}.jpg" alt="Projeto de {{@key}}">
+						</a>
+						<div class="textindex">
+							<a class="categtitle" href="categoria.html?key={{@key}}">{{categoria}}</a>
+							<a class="categtext">Clicando acima você encontra projetos desse tema!</a>
+						</div>
+					</li>
+					{{/each}}
+				</ul>
 			</div>
-		</div>
-		<div>
-			<ul class="listaindex">
-				<li class='categorias'>
-					<a class="listatitle">Categorias:</a>
-				</li>
-				<li class='itemindex'>
-					<img class="imgcateg" src='assets/img/mat.jpg' alt= 'imagem de mat'>
-					<div class="textindex">
-						<a class="categtitle" href="categoria.html">Projetos de Matemática</a>
-						<a class="categtext">Lorem ipsum dolor sit amet, consect etur adipisi cing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.</a>
-					</div>
-				</li>
-				<li class='itemindex'>
-					<img class="imgcateg" src='assets/img/desdig.jpg' alt= 'imagem digital'>
-					<div class="textindex">
-						<a class="categtitle" href="categoria.html">Projetos digitais</a>
-						<a class="categtext">Lorem ipsum dolor sit amet, conse ctetur adipisi cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
-					</div>
-				</li>
-				<li class='itemindex'>
-					<img class="imgcateg" src='assets/img/desfis.jpg' alt= 'imagem de fisica'>
-					<div class="textindex">
-						<a class="categtitle" href="categoria.html">Projetos físicos</a>
-						<a class="categtext">Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</main>
+		</main>
+	</div>
 </body>
 </html>
